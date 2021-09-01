@@ -12,14 +12,15 @@
             margin: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
+       
         }
+       
         .container{
             margin: 0 auto;
-         
             max-width: 85vw;
         }
         .col{
-        
+            display: flex;
             flex-direction: column;
 
         }
@@ -37,9 +38,9 @@
             background-color: white;
             height: 100px;
             align-items: center;
-            border: 1px black solid;
+            
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-wrap: wrap;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -119,20 +120,17 @@
             max-height: 100%;
             width: 100%;
             flex-direction: column;
-          
             flex-wrap: wrap;
-            
-            
             align-self: center;
             
         }
         .upp{
-            width: 50%;
-            padding-top: 70px;
+            max-width: 40%;
             font-size: 7vw;
             color: white;
-           
+            word-break:keep-all;
             font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 2px black;
             
         }
         .low{
@@ -143,9 +141,17 @@
             font-family: Arial, Helvetica, sans-serif;
          
         }
-        .days{
+    
+    
+        .stretch{
+            flex:1;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:medium;
+            align-items: stretch;
+            justify-content: space-evenly;
             display: flex;
-        
+            line-height: 20px;
         }
         .blocks{
             flex:1;
@@ -155,6 +161,7 @@
             align-items: flex-start;
             justify-content: space-evenly;
             display: flex;
+            line-height: 20px;
 
         }
         .art h2{
@@ -171,24 +178,24 @@
         }
         .block1{
     
-            background-color: aqua;
+            background-color: #02a2dc;
             
         }
         .block2{
-            background-color: rgb(54, 56, 133);
+            background-color: #006cbf;
           
        
         }
         .block3{
-            background-color: rgb(8, 8, 83);
+            background-color: #044394;
             min-height: 25vh;
             min-width: 100px;
-            display: flex;
         
         }
         
         .art{
             margin-bottom: 35px;
+            margin-top: 25px
          
             
             
@@ -197,7 +204,7 @@
             content: "";
             max-width: 15%;
             height: 4px;
-            background-color: blue;
+            background-color: #3f94a8;
             border-top-left-radius: 0;
             display: flex;
             margin-top: 10px;
@@ -206,7 +213,7 @@
             content: "";
             max-width: 10%;
             height: 4px;
-            background-color: blue;
+            background-color: #3f94a8;
             border-top-left-radius: 0;
             display: flex;
             margin-top: 10px;
@@ -214,15 +221,16 @@
        
         }
         .date{
-            background-color: blue;
+            background-color: #023e88;
             color: white;
             margin-right: 2px;
+            
             
         }
      
         
         .qnt{
-            background-color: aqua;
+            background-color: #04a0df;
             color:white;
 
             
@@ -237,13 +245,12 @@
             
         }
      
+        .content{
+            display: flex;
+        }
         .f1{
             flex: 1
         
-        }
-        
-        .content{
-            display: flex;
         }
         .f2{
             flex: 2;
@@ -257,21 +264,20 @@
         }
         .cont p{
             padding-right: 20px;
+            line-height: 20px;
+            
 
         
         }
         .d-block{
-            background-color: aqua;
+            background-color: #02a2dc;
             width: 150px;
             height: 160px;
             margin: 10px;
             margin-top: 20px;
             
         }
-        .appointment{
-            display: flex;
-            
-        }
+      
         .appointment div{
             align-items: center;
             padding: 5px;
@@ -285,22 +291,14 @@
         }
         footer{
             background-color: rgb(49, 49, 49);
+            line-height: 20px;
             
         }
         footer .block1, footer .block2, footer .block3{
-            min-height: 100px;
+            min-height: 110px;
             min-width: 200px;
             flex-wrap: wrap;
-         
             align-content: center;
-        }
-        footer .block1{
-           
-        }
-        f1{
-            display: flex;
-            flex: 1
-        
         }
         footer h2{
             color: white;
@@ -309,31 +307,37 @@
         }
         footer .blocks{
             justify-content: normal;
-            align-items: ;
+        }
+        .foo-al{
+            align-items: stretch;
+    
         }
         .info{
             display: flex;
             flex-direction: column;
-            
+           
             
         }
         info p{
-            margin: 0
+            margin: 0;
+            line-height: 20px;
         }
+
         .tel{
             justify-content: space-between;
             flex:1
         }
-        .kka{
+        .mb4{
             margin-bottom: 20px;
         }
         .colorgrey{
-            color:rgb(173, 169, 169);
+            color:#cfcdcd;
         }
         .colorblue{
-            color: rgb(59, 59, 223);
+            color: #02a2dc;
             font-size: 15px;
             font-weight: bold;
+            text-indent: 0em;
         }
         .colorwhite{
             color: white;
@@ -344,26 +348,39 @@
         .medh2{
             font-size: 20px;
         }
-        .tel p{
-            padding-left: 2
+        .medh2::after{
+            content: "";
+            max-width: 55px;
+            height: 4px;
+            background-color: #3f94a8;
+            border-top-left-radius: 0;
+            display: flex;
+            margin-top: 10px;
         }
-        .foo-al{
-            align-items: stretch;
-    
-        }
+        
+        
         .number{
             display: flex;
             align-content: center;
         }
         li{
             margin-left: 25px;
-        
+            list-style-type: none;
+     
+            text-indent: -1.3em;
         }
         ol{
-       
             padding: 0;
             margin: 0
  
+        }
+
+        .bef:after{
+            content: "";
+            width: 90%;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.123);
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -413,20 +430,43 @@
                     </p>
                     <button>Read more</button>
                 </div>
-                <div class="blocks px4 block3 col">
+                <div class="stretch px4 block3 col ">
                     <h2>Opening Hours</h2>
-                    <div class="days row">
-                        <p>Monday-Friday</p>
-                        <p>8:00-17:00</p>
+                    <div class="bef row">
+                        <div class="f2" >
+                            <p>Monday-Friday</p>
+                        </div>
+                        
+                        <div class="f1" >
+                            
+                            <p>8:00-17:00</p>
+                        </div>
+                        
                     </div> 
-                    <div class="row px4"> 
-                        <p>Saturday</p>
-                        <p>9:30-17:30</p>
+                   
+                    <div class="bef row"> 
+                            <div class="f2">
+                                <p>Saturday</p>
+                            
+                            </div>
+                          
+                            <div class="f1">
+                                <p>9:30-17:30</p>
+                            
+                            </div>
                     </div>     
-                    <div class="row">
-                        <p>Sunday</p>
-                        <p>9:30-15:00</p>
+         
+                    <div class=" bef row">
+                        <div class="f2">
+                            <p>Sunday</p>
+                        </div>    
+                     
+                        <div class="f1">
+                            <p>9:30-15:00</p>
+                        </div>
+                    
                     </div>
+               
                 </div> 
             </section>
         </section>
@@ -560,10 +600,10 @@
                                 <img src="assets/images/form.svg" type="svg" alt="form-ico">
                             </div>
                             <div>
-                                <p>Or <a href="#">fill in form</a> on our contact page.</p>
+                                <p>Or <a href="#">fill in the form</a> on our contact page.</p>
                             </div>
                         </div>
-                        
+                        <hr>
                     </section>
                 </aside>
 
@@ -604,7 +644,7 @@
                     <div>
                         <h2 class="medh2">Medicenter Clinic</h2>
                     </div>
-                    <div class="kka colorgrey">
+                    <div class="mb4 colorgrey">
                         <p>Mauris Adispiscing mauris tringila turpis interdum sed
                             pulvinar nisi malesuada individual</p>
                         </p>
@@ -642,12 +682,12 @@
                     </div>
                 </div>
                 <div class="col blocks f1">
-                        <ol>
-                            <h2 class="medh2">Latest Posts</h2>
+                        <h2 class="medh2">Latest Posts</h2>
+                        <ol>  
                             <li class="col">
-                                <div class="kka"> 
+                                <div class="mb4"> 
                                     <div>
-                                        <p>Lorem ipsum dolor,amet consectetur adipisicing elit. Voluptatum aspernaturea</p>
+                                        <p>&#8594; Lorem ipsum dolor,amet consectetur adipisicing elit. Voluptatum aspernaturea</p>
                                     </div>
                                     <div>
                                         <p class="colorblue" >6 Years ago</p>
@@ -655,9 +695,9 @@
                                 </div>  
                             </li>    
                             <li class="col">
-                                <div class="kka">
+                                <div class="mb4">
                                     <div>
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <p>&#8594; Lorem ipsum dolor sit amet consectetur.</p>
                                     </div>
                                     <div>
                                         <p class="colorblue">6 Years ago</p>
@@ -665,9 +705,9 @@
                                 </div>
                             </li>
                             <li class="col">  
-                                <div class="kka">
+                                <div class="mb4">
                                     <div>
-                                        <p> Lorem ipsum dolor, suscipit veniam tenetur, quis, reiciendis laborum modi.</p>
+                                        <p>&#8594; Lorem ipsum dolor, suscipit veniam tenetur, quis, reiciendis laborum modi.</p>
                                     </div>
                                     <div>
                                         <p class="colorblue">6 Years ago</p>
@@ -677,13 +717,12 @@
                         </ol>
                 </div>
                 <div class="col blocks f1 colorgrey">
-                    
+                    <h2 class="medh2">Latest Tweets</h2>
                     <ol>
-                        <h2 class="medh2">Latest Tweets</h2>
                         <li class="col">
-                        <div class="kka">
+                        <div class="mb4">
                             <div>
-                                <p>We've released new version (v.2) of our #ClenMate #Claaring Company
+                                <p>&#8594; We've released new version (v.2) of our #ClenMate #Claaring Company
                                     #Maid #Gardening #WordpressTheme, please che..
                                 </p>
                             </div>
@@ -693,9 +732,9 @@
                         </div>
                         </li>
                         <li>
-                            <div class="kka">
+                            <div class="mb4">
                                 <div>
-                                <p>We've released new version (v6.2) of #Timeable #Responsive #Sundes#WP Plugin
+                                <p>&#8594; We've released new version (v6.2) of #Timeable #Responsive #Sundes#WP Plugin
                                     .Please check a! #CodeCanyon</p>
                                 </div>
                                 <div>
@@ -704,9 +743,9 @@
                             </div>
                         </li>
                         <li>
-                            <div class="kka">
+                            <div class="mb4">
                                 <div>
-                                    <p>We,ve released new version (v6.0) of our #mobile #responsive #Aschhedule WP Plugin with 
+                                    <p>&#8594; We,ve released new version (v6.0) of our #mobile #responsive #Aschhedule WP Plugin with 
                                         dicering and #pdf export...</p>
                                 </div>
                                 <div>
