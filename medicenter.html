@@ -19,7 +19,7 @@
             max-width: 85vw;
         }
         .col{
-            display: flex;
+        
             flex-direction: column;
 
         }
@@ -129,7 +129,7 @@
         .upp{
             width: 50%;
             padding-top: 70px;
-            font-size: 4em;
+            font-size: 7vw;
             color: white;
            
             font-family: Arial, Helvetica, sans-serif;
@@ -170,25 +170,32 @@
             color: white
         }
         .block1{
-            min-height: 25vh;
-            display: flex;
+    
             background-color: aqua;
             
         }
         .block2{
             background-color: rgb(54, 56, 133);
+          
+       
         }
         .block3{
             background-color: rgb(8, 8, 83);
+            min-height: 25vh;
+            min-width: 100px;
+            display: flex;
+        
         }
+        
         .art{
             margin-bottom: 35px;
-            margin-top: 25px;
+         
+            
             
         }
         .depart h2::after{
             content: "";
-            max-width: 20%;
+            max-width: 15%;
             height: 4px;
             background-color: blue;
             border-top-left-radius: 0;
@@ -235,10 +242,10 @@
         
         }
         
-        .meio{
+        .content{
             display: flex;
         }
-        .mid{
+        .f2{
             flex: 2;
         }
         .wrapper{
@@ -276,6 +283,88 @@
         .appointment img{
             width: 35px;
         }
+        footer{
+            background-color: rgb(49, 49, 49);
+            
+        }
+        footer .block1, footer .block2, footer .block3{
+            min-height: 100px;
+            min-width: 200px;
+            flex-wrap: wrap;
+         
+            align-content: center;
+        }
+        footer .block1{
+           
+        }
+        f1{
+            display: flex;
+            flex: 1
+        
+        }
+        footer h2{
+            color: white;
+            margin: 20px 0px 20px 0px
+        
+        }
+        footer .blocks{
+            justify-content: normal;
+            align-items: ;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        info p{
+            margin: 0
+        }
+        .tel{
+            justify-content: space-between;
+            flex:1
+        }
+        .kka{
+            margin-bottom: 20px;
+        }
+        .colorgrey{
+            color:rgb(173, 169, 169);
+        }
+        .colorblue{
+            color: rgb(59, 59, 223);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .colorwhite{
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+    
+        }
+        .medh2{
+            font-size: 20px;
+        }
+        .tel p{
+            padding-left: 2
+        }
+        .foo-al{
+            align-items: stretch;
+    
+        }
+        .number{
+            display: flex;
+            align-content: center;
+        }
+        li{
+            margin-left: 25px;
+        
+        }
+        ol{
+       
+            padding: 0;
+            margin: 0
+ 
+        }
     </style>
 </head>
 <body>
@@ -309,7 +398,7 @@
                     <p>Medicenter is a responsive template perfect for all screen sizes</p>
                 </div>
             </div>
-            <section class="info row container">
+            <section class="row container">
                 <div class="blocks px4 block1 col">
                     <h2>Emergency Case</h2>
                     <p>If you need a doctor ungently outside of medicenter opening house, call emergency appointment
@@ -341,10 +430,10 @@
                 </div> 
             </section>
         </section>
-        <section class="meio">
-            <article class="row mid container">
-                <section class="art col mid">
-                    <h2 id="last-news"> Latest News</h2>
+        <section class="content">
+            <article class="row f2 container">
+                <section class="art col f2">
+                    <h2 id="last-news" class="medh2"> Latest News</h2>
                     <div class="f1 row">
                         <div class="col downside">
                             <div class="art row">
@@ -433,7 +522,7 @@
                 <aside class="wrapper art f1 depart col">
                     <section>
                         <div>
-                            <h2>Departaments</h2>
+                            <h2 class="medh2">Departaments</h2>
                         </div> 
                         <div class="row">
                             <div class="d-block"></div>
@@ -445,7 +534,7 @@
                         </div>
                     </section>
                     <section class="appointment col">
-                        <h2>Make An Appointment</h2>
+                        <h2 class="medh2">Make An Appointment</h2>
                         <p class="py3">Lorem ipsum dolor, sit amet consectetur elit. Eveniet, at eaque? Alias, ab modi. Dolorem libero culpa ad.</p>
                         <hr>
                         <div class="row">
@@ -480,6 +569,160 @@
 
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="wrapper">
+            <div class="container row">
+                <div class="blocks block1 col">
+                    <div>
+                        <h2>Health Insurance</h2>
+                    </div> 
+                    <div>
+                        <p>Here in medicenter we have individual &#8594;</p>
+                    </div>
+                </div>
+            
+                <div class="blocks block2 col">
+                    <div>
+                        <h2>Medical Records</h2>
+                    </div> 
+                    <div>
+                        <p>Here in medicenter we have individual &#8594;</p>
+                    </div>
+                </div>
+                
+                <div class="blocks block3 col">
+                    <div>
+                        <h2>Online Bill Pay</h2>
+                    </div>
+                    <div>
+                        <p>Here in medicenter we have individual &#8594;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container row">
+                <div class="col blocks f1 colorgrey foo-al">
+                    <div>
+                        <h2 class="medh2">Medicenter Clinic</h2>
+                    </div>
+                    <div class="kka colorgrey">
+                        <p>Mauris Adispiscing mauris tringila turpis interdum sed
+                            pulvinar nisi malesuada individual</p>
+                        </p>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Medicenter Clinic</p>
+                        </div>
+                    </div>
+                    <div class="info colorgrey">   
+                        <div class="row tel">
+                            <div>
+                                <p>33 farlane Street</p>
+                            </div>
+                            <div>
+                                <p class="number">+123 655 655</p>
+                            </div>
+                        </div>
+                        <div class="row tel">
+                            <div>
+                                <p>Kellor East</p>
+                            </div>
+                            <div>
+                                <p class="number" >+123 756 755</p>
+                            </div>
+                        </div>
+                        <div class="row tel">
+                            <div>
+                                <p>VIG 3003, Australia</p>
+                            </div>
+                            <div >
+                                <p class="colorwhite">Medicenter@mail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col blocks f1">
+                        <ol>
+                            <h2 class="medh2">Latest Posts</h2>
+                            <li class="col">
+                                <div class="kka"> 
+                                    <div>
+                                        <p>Lorem ipsum dolor,amet consectetur adipisicing elit. Voluptatum aspernaturea</p>
+                                    </div>
+                                    <div>
+                                        <p class="colorblue" >6 Years ago</p>
+                                    </div>
+                                </div>  
+                            </li>    
+                            <li class="col">
+                                <div class="kka">
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+                                    <div>
+                                        <p class="colorblue">6 Years ago</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col">  
+                                <div class="kka">
+                                    <div>
+                                        <p> Lorem ipsum dolor, suscipit veniam tenetur, quis, reiciendis laborum modi.</p>
+                                    </div>
+                                    <div>
+                                        <p class="colorblue">6 Years ago</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                </div>
+                <div class="col blocks f1 colorgrey">
+                    
+                    <ol>
+                        <h2 class="medh2">Latest Tweets</h2>
+                        <li class="col">
+                        <div class="kka">
+                            <div>
+                                <p>We've released new version (v.2) of our #ClenMate #Claaring Company
+                                    #Maid #Gardening #WordpressTheme, please che..
+                                </p>
+                            </div>
+                            <div>
+                                <p class="colorblue">4 Days Ago</p>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="kka">
+                                <div>
+                                <p>We've released new version (v6.2) of #Timeable #Responsive #Sundes#WP Plugin
+                                    .Please check a! #CodeCanyon</p>
+                                </div>
+                                <div>
+                                    <p class="colorblue">5 Days Ago</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="kka">
+                                <div>
+                                    <p>We,ve released new version (v6.0) of our #mobile #responsive #Aschhedule WP Plugin with 
+                                        dicering and #pdf export...</p>
+                                </div>
+                                <div>
+                                    <p class="colorblue">2 Days ago</p>
+                                </div>
+                            </div>
+                        </li>
+                    
+                    </ol>
+                </div>
+                
+            
+            </div>
+            
+        </div>
+        <div></div>
+    </footer>
 </body>
 </html>
