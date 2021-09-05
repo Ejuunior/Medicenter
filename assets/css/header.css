@@ -1,4 +1,4 @@
-.menu_header button{
+.menu_header a{
     padding: 10px;
     background-color: white;
     color: black;
@@ -22,4 +22,15 @@
 .logo-right{
     flex-wrap: wrap;
     align-items: center ;
+}
+.menu_header a:hover{
+    background-color: #02a2dc;
+    color: white;
+    transition: 0.5s;
+}
+footer a{
+    text-decoration: none;
+}
+header a{
+    text-decoration: none;
 }

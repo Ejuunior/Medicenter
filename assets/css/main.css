@@ -11,7 +11,6 @@
 }
 .text-img{
     display: flex;
-
     max-height: 100%;
     width: 100%;
     flex-direction: column;
@@ -23,7 +22,7 @@
     max-width: 40%;
     font-size: 7vw;
     color: white;
-    word-break:keep-all;
+    
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 2px black;
     
@@ -63,13 +62,29 @@
     margin-top: 35px;
     margin-bottom: 25px;
 }
-    
+article a{
+    text-decoration: none;
+    color: black;
+}
 
-button{
+ .blocks a{
     padding: 15px;
     background-color: rgba(240, 248, 255, 0);
     border: 1px white solid;
-    color: white
+    color: white;
+    text-decoration: none;
+}
+main .block1 a:hover{
+    background-color: azure;
+    color: #02a2dc;
+    transition: 0.5s;
+
+}
+main .block2 a:hover{
+    background-color: azure;
+    color: #006cbf;
+    transition: 0.5s
+    
 }
 .block1{
 
@@ -90,10 +105,21 @@ button{
 
 .article-content{
     margin-bottom: 35px;
-    margin-top: 25px
+    margin-top: 25px;
+    flex:2
  
     
     
+}
+main aside{
+    flex: 1;
+   
+}
+
+.depart{
+    display: flex;
+    justify-content: space-between;
+
 }
 .depart h2::after{
     content: "";
@@ -133,18 +159,21 @@ button{
 .downside{
     margin-right: 10px;
     flex: 1;
+    
+
+    
+
 
 }
-.downside2{
-    flex: 1;
-    
+.downside p{
+   max-width: 350px;
 }
 
 .content{
     display: flex;
 }
 .content img{
-    width: 350px;
+    max-width: 350px;
 }
 .f1{
     flex: 1
@@ -169,11 +198,12 @@ button{
 }
 .d-block{
     background-color: #02a2dc;
-    width: 150px;
+    width: 160px;
     height: 160px;
-    margin: 10px;
-    margin-top: 20px;
-    
+    margin: 20px 10px 10px 0px;
+    align-self: flex-end;
+   
+  
 }
 
 .appointment div{

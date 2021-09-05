@@ -108,3 +108,15 @@ ol{
     color: #7f7e7f;
     
 }
+footer .medh2{
+    padding-top:10px
+}
+footer .blocks a{
+    border: none;
+    padding: 1px
+}
+
+footer .block2:hover footer a{
+    color: grey;
+    transition: 1s;
+}
