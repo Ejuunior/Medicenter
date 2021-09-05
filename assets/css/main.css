@@ -1,0 +1,189 @@
+.back-img{
+    height: 70vh;
+    display: flex;
+    background-image:url("../images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    
+    
+}
+.text-img{
+    display: flex;
+
+    max-height: 100%;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    
+}
+.upp{
+    max-width: 40%;
+    font-size: 7vw;
+    color: white;
+    word-break:keep-all;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px black;
+    
+}
+.low{
+    max-width: 35%;
+    font-size: 20px;
+    color: white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+
+.stretch{
+    flex:1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    align-items: stretch;
+    justify-content: space-evenly;
+    display: flex;
+    line-height: 20px;
+}
+.blocks{
+    flex:1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:medium;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    display: flex;
+    line-height: 20px;
+
+}
+.article-content h2{
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+    
+
+button{
+    padding: 15px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px white solid;
+    color: white
+}
+.block1{
+
+    background-color: #02a2dc;
+    
+}
+.block2{
+    background-color: #006cbf;
+  
+
+}
+.block3{
+    background-color: #044394;
+    min-height: 25vh;
+    min-width: 100px;
+
+}
+
+.article-content{
+    margin-bottom: 35px;
+    margin-top: 25px
+ 
+    
+    
+}
+.depart h2::after{
+    content: "";
+    max-width: 15%;
+    height: 4px;
+    background-color: #3f94a8;
+    border-top-left-radius: 0;
+    display: flex;
+    margin-top: 10px;
+}
+#last-news::after{
+    content: "";
+    max-width: 10%;
+    height: 4px;
+    background-color: #3f94a8;
+    border-top-left-radius: 0;
+    display: flex;
+    margin-top: 10px;
+
+
+}
+.date{
+    background-color: #023e88;
+    color: white;
+    margin-right: 2px;
+    
+    
+}
+
+
+.qnt{
+    background-color: #04a0df;
+    color:white;
+
+    
+}
+.downside{
+    margin-right: 10px;
+    flex: 1;
+
+}
+.downside2{
+    flex: 1;
+    
+}
+
+.content{
+    display: flex;
+}
+.content img{
+    width: 350px;
+}
+.f1{
+    flex: 1
+
+}
+.f2{
+    flex: 2;
+}
+.wrapper{
+    flex-wrap: wrap;
+}
+.content-text h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content-text p{
+    padding-right: 20px;
+    line-height: 20px;
+    
+
+
+}
+.d-block{
+    background-color: #02a2dc;
+    width: 150px;
+    height: 160px;
+    margin: 10px;
+    margin-top: 20px;
+    
+}
+
+.appointment div{
+    align-items: center;
+    padding: 5px;
+    padding-left: 0;
+}
+.appointment .py3{
+    padding-bottom: 25px
+}
+.appointment img{
+    width: 35px;
+}

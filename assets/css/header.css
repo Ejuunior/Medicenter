@@ -1,0 +1,25 @@
+.menu_header button{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    margin: 5px
+} 
+.menu_header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-header{
+    background-color: white;
+    height: 100px;
+    align-items: center;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo-right{
+    flex-wrap: wrap;
+    align-items: center ;
+}

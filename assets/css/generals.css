@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 85vw;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.px1{
+    padding-left: 5px;
+}
+.px2{
+    padding-left: 10px;
+}
+.px3{
+    padding-left: 15px;
+}
+.px4{
+    padding-left: 20px;
+}
+.menu_header button{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    margin: 5px
+}
+.py1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.py2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.py3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.py4{
+    padding-top: 20px;
+    padding-bottom:20px ;
+}
+.pxy1{
+    padding: 5px;
+
+}
+.pxy2{
+    padding: 10px;
+
+}
+.pxy3{
+    padding: 15px;
+
+}
+.pxy4{
+    padding: 20px;
+
+}
+
