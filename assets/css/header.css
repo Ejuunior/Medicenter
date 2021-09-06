@@ -34,3 +34,73 @@ footer a{
 header a{
     text-decoration: none;
 }
+@media only screen and (max-width: 1160px){
+    #item1{
+        display: none;
+    }
+
+}   
+@media only screen and (max-width: 976px){
+    #item2{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 900px){
+    #item3{
+        display: none;
+    }
+}
+@media(max-width: 800px){
+    #item4{
+        display: none;
+    }
+}
+    
+@media(max-width: 650px){
+    #item5{
+        display: none;
+    }
+}
+@media(max-width: 480px){
+    #item6{
+        display: none;
+    }
+}
+@media(max-width: 380px){
+    #item7{
+        display: none;
+    }
+}
+.menu-btn {
+  
+    border: 1px black solid;
+    width: 36px;
+    transform: translate(-50%,-50%);  
+  }
+  
+  .menu-btn:before,
+  .menu-btn:after {
+    background-color: rgb(10, 8, 8);
+    content: '';
+    display: block;
+    height: 4px;
+    transition: all 200ms ease-in-out;
+  }
+  .menu-btn:before {
+    box-shadow: 0 10px 0 #fff;
+    margin-bottom: 16px;
+  }
+  .menu-btn:hover:before {
+    box-shadow: 0 0 0 #fff;
+    transform: translateY(10px) rotate(45deg);
+  }
+  .menu-btn:hover:after{
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+@media(max-width: 400px){
+    .menu-btn:hover #item1{
+        display: block;
+    }
+}
