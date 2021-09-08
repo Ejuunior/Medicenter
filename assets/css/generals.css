@@ -2,7 +2,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .container{
@@ -16,7 +15,6 @@
 }
 .row{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 .px1{
@@ -31,13 +29,7 @@
 .px4{
     padding-left: 20px;
 }
-.menu_header button{
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border: none;
-    margin: 5px
-}
+
 .py1{
     padding-top: 5px;
     padding-bottom: 5px;

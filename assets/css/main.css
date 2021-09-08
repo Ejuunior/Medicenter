@@ -19,10 +19,13 @@
     
 }
 .upp{
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
     max-width: 40%;
-    font-size: 7vw;
+    font-size: 6vw;
     color: white;
-    
+    line-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 2px black;
     
@@ -31,7 +34,8 @@
     max-width: 35%;
     font-size: 20px;
     color: white;
-    
+    margin-bottom: 50px;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
  
 }
@@ -100,7 +104,6 @@ main .block2 a:hover{
     min-height: 25vh;
     min-width: 100px;
     justify-content: space-between;
-
 }
 
 .article-content{
@@ -132,15 +135,13 @@ main aside{
 }
 #last-news::after{
     content: "";
-    max-width: 10%;
+    
     height: 4px;
     background-color: #3f94a8;
     border-top-left-radius: 0;
     display: flex;
     margin-top: 10px;
-
-
-}
+    }
 .date{
     background-color: #023e88;
     color: white;
@@ -243,6 +244,47 @@ main aside{
         padding-left: 0;
     }
     .bef{
-    margin: 10px;
+    margin: ;
 }
+    main .block2 a, main .block1 a{
+        text-align: center;
+    }
+    .upp{
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 640px){
+    .back-img section{
+        flex-direction: column;
+    }
+    main .container{
+        max-width: 100%;
+        margin: 0;
+    }
+    .blocks{
+        flex-direction: column;
+    }
+    .upp{
+        font-size: 70px;
+    }
+    .downside{
+        align-items: center;
+        
+    }
+    .medh2{
+        text-align: center;
+    }
+    #last-news::after{
+        min-width: 150px;
+        margin: 0 auto
+    }
+    main .medh2::after{
+        min-width: 150px;
+        margin: 0 auto
+    
+    }
+    .appointment .medh2::after{
+        min-width: 250px;
+        margin: 0 auto;}
 }

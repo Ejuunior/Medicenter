@@ -27,7 +27,9 @@ footer .blocks{
    
     
 }
-
+footer a{
+    text-decoration: none;
+}
 info p{
     margin: 0;
     line-height: 20px;
@@ -74,10 +76,9 @@ info p{
     align-content: center;
 }
 li{
-    margin-left: 25px;
-    list-style-type: none;
-
-    text-indent: -1.3em;
+    /* margin-left: 25px; */
+    /* list-style-type: none; */
+    /* text-indent: -1.3em; */
 }
 ol{
     padding: 0;
